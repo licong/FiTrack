@@ -1,0 +1,395 @@
+Android Mobile Application Development Team (AMADT)
+
+FiTrack
+
+Technical Support: 
+    Phillip Lopo 
+    philliplopo@gmail.com
+    858.210.5786
+
+    Kevin Fox
+    AMADT-l@ucsd.edu
+    619.852.9217
+
+Build Requirements:
+    Eclipse 3.6 or higher
+    Android Platform SDK 2.3.3
+
+Importing into Eclipse:
+    1. Open Eclipse and select "File->Import"
+
+    2. In the Import dialog select "General->Existing Projects into Workspace"
+       and Select "Next>"
+
+    3. Under "Select root directory" click "Browse"
+
+    4. Navigate to the "amadt" folder and click "OK"
+
+    5. Ensure that "FiTrack" is selected under "Projects" and click "Finish"
+
+User Guide:
+
+Index:
+
+    [Section]       Description
+
+    [a00]           Home Screen
+        [a01]       Button Descriptions
+
+    [b00]           WOD
+        [b01]       Select Wod
+        [b02]       WOD Tracking
+        [b02]       My Scheduled
+        [b03]       Crossfit Official RSS
+        [b04]       Create Custom WOD
+        [b06]       Followed Box WODs
+
+    [c00]           Goals
+        [c01]       Add Goal
+
+    [d00]           Logs
+        [d01]       Add to schedule
+        [d02]       Delete from schedule
+
+    [e00]           Timer
+        [e01]       Timer Mode
+        [e02]       Stopwatch Mode
+
+    [f00]           Profile
+        [f01]       Gravatar
+
+    [g00]           Settings
+        [g01]       Sign in
+        [g02]       Register
+        [g03]       Forgot?
+        [g04]       Account
+        [g05]       Change Password
+        [g06]       Edit Account Information
+        [g07]       Forgot Username or Password
+        [g05]       Box
+        [g06]       Follow Box
+        [g07]       Stop Following Box
+        [g08]       Create Box
+        [g09]       Manage Box
+        [g10]       Schedule WOD
+        [g11]       View/Edit Details
+        [g12]       Delete
+        [g13]       Reset Local Data
+
+    [h00]           About
+
+
+Full User Guide:
+
+[a00] Home Screen
+
+    The home screen is what appears when the user first opens the application.
+    On the home screen, the user may navigate to any of the core section of 
+    the application.
+
+[a01 Button Descriptions
+
+    The home screen features 7 main buttons as described below.
+
+    Wod: Brings the user to the wod page where they can elect to select a WOD
+         to time and record. The user has the option of selecting from a 
+         pre-defined list, creating a custom WOD, starting a WOD determined
+         by a box they are following, or referencing the official CrossFit 
+         RSS feed.
+
+    Goals: Brings the user to the goals screen where they are permitted to save
+           specific goals they wish to achieve such as finishing a certain WOD
+           within a givin time.
+
+    Logs: Brings the user to the calendar view where they can schedule a WOD for
+          themselves in the future, or view already completed WODs.
+
+    Timer: Bring the user to the timer screen where they can utilize basic
+           stopwatch and timer functionality indpeended of a specific workout.
+
+    Profile: Displays the last signed in user's profile.
+
+    Settings: Bring the user to the settings screen where they may create an account,
+              modifiy account settings, create and manage boxes, and reset the local 
+              database to a newly installed state.
+
+    About: Displays a brief introduction of AMADT.
+
+
+
+[b00] WOD Screen
+    
+    At the WOD screen, the user can  elect to select a WOD
+    to time and record. The user has the option of selecting from a 
+    pre-defined list, creating a custom WOD, starting a WOD determined
+    by a box they are following, or referencing the official CrossFit 
+    RSS feed.
+
+[b01] Select Wod
+
+    Present the user with the 4 main types of WODs supported in FiTrack;
+    Benchmark Girl, New Girl, Hero, and Custom.
+
+    When the user selects one of the types, a dropdown menu reveals all of the
+    WODs of that type whereupon the user may make their selection.
+
+[b02] WOD Tracking
+
+    When the user has selected a WOD to perform, they are brought to the WOD
+    tracking screen. The WOD tracking screen exposes the following information
+    and functionaility.
+
+    The WOD name
+
+    The WOD description. This can also convey additional information that the
+    WOD needs to convey.
+
+    Progress. This lists out which exercises the user has recorded this session
+    displays the sets or distance associated with that exercise.
+
+    Exercise list. This displays a selectable list of all the exercises that
+    is associated with that particular WOD. If the user selects one of the
+    exercises, a dialog pops up allowing the user to record that exersize.
+    Once an exercise has been recorded, it gets removed from the list and is
+    displayed in the progress list as mentioned earlier.
+
+    The start button allows the user to record how long it took them to complete
+    their WOD. This data is can be used in conjunction with the User's saved goals.
+
+    The save buttons commits the WOD, its time, and all the exercises completed for it
+    into the local datastore. 
+
+[b02] My Scheduled
+
+    If the user has no WODs scheduled, a dialog asking to redirect the user to
+    the calednar displays. The user may schedule WODs in advanced at the calendar screen.
+
+    If the user has a single WOD already scheduled, the user is taken to the WOD Tracking
+    screen for that particular WOD.
+
+    If the user ha scheduled multiple WODs for the day, the user is presenting a list of 
+    the scheduled WODs where they may then select one to track.
+
+[b03] Crossfit Official RSS
+
+    Displays CrossFit.com's official RSS feed. This page features a button at the bottom
+    labeled "Do it!" which will redirect the user to the WOD selection screen (see [b01]).
+
+[b04] Create Custom WOD
+
+    The create custom WOD screen allows the user to create a WOD of their own or simply
+    one that does not yet exist in the FiTrack database.
+
+    The user may:
+
+    Specify the WOD's name
+
+    Add a description for the WOD (Optional but recommended)
+
+    Added a list of exercises that will be performed during this WOD. 
+    To add an exercise, start typing in the "Add Exercise" field the exercise name
+    (e.g. pull-up). A dropdown menu ocntaining all excersize which match that name
+    will display. The user can then select on of those exercises and click the "Add"
+    button. This can be repeated as frequently as the user wishes.
+
+    Once the user is satisfied with the WOD, they can save it by hitting "Create".
+    The WOD will now be accessible under the "Custom" menu on the WOD select screen.
+
+[b06] Followed Box WODs
+
+    If the user is signed in and any of their followed boxes have a WOD scheduled
+    for the users local time, then a new row will appear on the WOD screen for each
+    box that has a scheduled WOD. The row will contain the name of the Box. Upon selection,
+    the user will be redirected to the WOD tracking screen for the WOD scheduled by the
+    box selected.
+
+[c00] Goals
+
+    Here the user may set a goal. Currently, the only goal that can be created
+    allows the user to specify a time (in seconds) they would like to beat a 
+    particular WOD by. 
+
+[c01] Add Goal
+
+    To add a goal, click the "Add Goal" button. The user may then specify the 
+    WOD name and the time(in seconds) that they wish to complete the WOD by.
+
+[d00] Logs
+
+    Allows the user to schedule WODs for the future.
+
+[d01] Add to schedule
+
+    Selecting on a date and clicking the green + symbols allows the user to 
+    schedule a WOD on that date. The user may select multiple WODs for any 
+    given date.
+
+[d02] Delete from schedule
+
+    Selecting a date and clicking the red - symbol allows the user to 
+    remove a WOD from their schedule
+
+[e00] Timer
+
+    Allows the user to use an independant stopwatch and timer
+
+[e01] Timer Mode
+
+    By default, or if the user clicks "Switch to Timer" the screen displays 
+    a timer. The user can specify a time (similar to a microwave) that the 
+    timer counts down from.
+
+[e02] Stopwatch Mode
+
+    If the user clicks "Switch to Stopwatch" the stopwatch screen is displayed.
+    The stop watch allows the user to start, stop, pause and reset a 
+    stopwatch that counts up from 0 and displays minuts, seconds and milliseconds.
+
+[f00] Profile
+
+    The user may view their profile on the profile screen.
+
+    The information displayed is the user's username, email address, 
+    self-description, and avatar graphic.
+
+[f01] Gravatar
+
+    The user's avatar graphic is obtained using the avatar service provided by Gravatar.com
+    If the user wishes to change their avatar, they may register an account at gravatar.com
+    using the same email used for their fitrack account.
+
+    More information can be recieved at http://en.gravatar.com/site/faq/
+
+[g00] Settings
+
+    The settings screen exposes all user and box settings and management functions.
+
+[g01] Sign in
+
+    The user may sign in using their FiTrack username and password. If the user does not yet have
+    an account they can create one by cicking on the "Register" button on the lower left corner of
+    the screen (see [g02]). If the user has forgotten their user name or password, the can the information sent to their email address by seelecting the "Forgot?" button on the lower right side of the screen
+    (see [g03]).
+
+[g02] Register
+
+    The user can register an account to enable profile and box functionality.
+    In order to create an account, the user must provide the following
+    information:
+
+    username: an alphanumeric username at least 4 charcaters long.
+
+    email: a valid email address (used for password/username retrieval and gravatar icons)
+
+    password: but be at least 8 characters long
+
+    The user must then click the "Create Account" button. If there are any
+    difficulties in creating the account, the user will be notified via a
+    dialog.
+
+[g03] Forgot?
+
+    see [g07]
+
+[g04] Account
+
+    Exposes account management functions to the user.
+
+[g05] Change Password
+
+    Allows the user to change their password. For security reasons, the user
+    must enter their current password for the change to take place.
+
+    The same restrictions apply as specified in  [g02]
+
+[g06] Edit Account Information
+
+    Allows the user to change their associated email address and self-description.
+
+    The same restrictions apply as specified in [g02]
+
+[g07] Forgot Username or Password
+
+    If the user has forgotten their username or password, the may have the
+    the information sent to their email address using this page.
+
+    In order to retrieve any information, the user must enter a valid email
+    that is registered with FiTrack.
+
+    Send Username: Send the user's username to their email address.
+
+    Reset Password: Changes the user's password to a randomly generated
+                    password and emails it to the user's email address
+
+[g05] Box
+
+    Exposes box settings and management functions.
+
+[g06] Follow Box
+
+    The user may enter the "box ID" (similar to a username) of the box they
+    wish to start following. Following a box allows the user to recieve 
+    scheduled WODs for that box on their WOD screen.
+
+[g07] Stop Following Box
+
+    If the user wished to stop following a box, the can do so here by selecting
+    a box they wish to longer follow and confirm their removal in the dialog 
+    that appears
+
+
+[g08] Create Box
+
+    If the user wishes to create and manage their own box to manage, they can
+    do so here.
+
+    The user must provide the following information in order to cretae a box.
+
+    Box ID: Similar to a user id. Must be alphanumeric and at least 4 
+            4 characters long.
+
+    Box Name: The actual name of the box (no restrictions on symbols)
+
+    Description: The description of the box.
+
+    The user must then click the "Create" button for the box to be made.
+
+[g09] Manage Box
+
+    If the user has created any boxes, they will be listed here.
+
+    The user must select one of the listed boxes in order to manage it.
+
+[g10] Schedule WOD
+
+    The user can schedule a WOD for the selected box (detailed in the ID 
+    field at top of the screen). To do so, the user must select a WOD in 
+    the drop down list, set a date on the date spinners, and click the 
+    schedule button.
+
+[g11] View/Edit Details
+
+    Here the user may change details associated with the box such as the box 
+    name and the description of the box.
+
+[g12] Delete
+
+    If the user wishes to permanently delete the box, they may do so by
+    clicking the red "Delete" button and confirming the deletion in the 
+    presented dialog.
+
+    *NOTE: DELETING A BOX IS PERMANENT AND IRREVERSIBLE.
+
+[g13] Reset Local Data
+
+    The user can reset the local data in the database by clicking the 
+    "Reset Local Data" button and confirming in the presenting dialog.
+
+    This feature will wipe out recorded WODs, custom WODs, scheduled WODs,
+    and goals set by the user.
+
+    *NOTE: This action IS PERMANENT AND IRREVERSIBLE.
+
+[h00] About
+    
+    Displays a simple about page introducing the AMADT members and their roles.

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/bg">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/prevMonth"
+			android:src="@drawable/calendar_left_arrow_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageView>
+		<Button
+			android:id="@+id/currentMonth"
+			android:layout_weight="0.6"
+			android:textColor="#0066CC"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:background="@drawable/calendar_bar"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content">
+		</Button>
+		<ImageView
+			android:id="@+id/nextMonth"
+			android:src="@drawable/calendar_right_arrow_selector"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageView>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:id="@+id/calendarheader"
+			android:src="@drawable/weekday_header"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageView>
+	</LinearLayout>
+
+	<GridView
+	    android:id="@+id/calendar"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:listSelector="@null"
+	    android:numColumns="7" >
+	</GridView>
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/removeItem"
+			android:src="@drawable/remove"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageView>
+		
+		<Button
+			android:id="@+id/dayView"
+			android:layout_weight="0.6"
+			android:textColor="#0066CC"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:background="@drawable/list_header"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content">
+		</Button>
+		
+		<ImageView
+			android:id="@+id/addItem"
+			android:src="@drawable/add"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</ImageView>
+	</LinearLayout>
+	
+	<ListView  
+	    android:id="@+id/task_list"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+	    android:entries="@array/countries_array">
+	</ListView>
+	
+</LinearLayout>

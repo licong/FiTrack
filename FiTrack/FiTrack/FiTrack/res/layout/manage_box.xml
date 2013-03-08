@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_blue" >
+
+        <TextView
+            android:id="@+id/box_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/box_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" android:ellipsize="end"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/schedule_wod_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dip"
+        android:text="@string/schedule_wod" />
+
+    <Button
+        android:id="@+id/edit_details_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/schedule_wod_button"
+        android:layout_below="@+id/schedule_wod_button"
+        android:layout_marginTop="75dip"
+        android:text="@string/view_edit_details" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_details_button"
+        android:layout_below="@+id/edit_details_button"
+        android:layout_marginTop="75dip"
+        android:text="@string/delete" android:background="@drawable/delete_button"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/note_text_disabled" >
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id_label"
+            android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/box_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id_filler"
+            android:textAppearance="?android:attr/textAppearanceSmall" android:textColor="@color/white" android:layout_marginLeft="5dip"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

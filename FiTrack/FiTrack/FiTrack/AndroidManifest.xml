@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amadt.fitrack"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:theme="@android:style/Theme.Light"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name=".controller.HomeScreenActivity"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity android:name="org.achartengine.GraphicalActivity"/>
+        <activity android:name=".controller.FiTrackMainMenuActivity" />    		
+      	<activity 
+        	android:name=".controller.TodaysWodActivity"
+        	android:label="@string/wod"/>
+        <activity android:name=".controller.HomeScreenRedirectActivity"/>
+        <activity android:name=".controller.CalendarActivity"/>
+        <activity android:name=".controller.WodToolsActivity"/>
+        <activity android:name=".controller.FindAWodActivity"/>
+        <activity android:name=".controller.GoalsActivity"/>
+        <activity android:name=".controller.ProfileActivity"/>
+        <activity android:name=".controller.SyncActivity"/>
+        <activity android:name=".controller.AboutActivity"/>
+        <activity android:name=".controller.WODViewActivity"/>
+        <activity android:name=".controller.TimerActivity" />
+        <activity android:name=".controller.CreateCustomWODActivity"/>
+        <activity android:name=".controller.CrossFitRSSActivity"/>
+        <activity android:name=".controller.ChartActivity"/>
+        <activity android:name=".controller.GraphLine"/>
+        <activity android:name=".controller.ViewExerciseActivity"/>
+        <activity android:name=".controller.ExerciseVideoActivity"/>
+        <activity android:name=".controller.StopwatchActivity"/>
+        <activity android:name=".controller.EditGoalActivity"/>
+        
+        <!-- User Settings -->
+        <activity android:name=".controller.SettingsActivity"/>
+        	<activity android:name=".controller.SignInActivity"/>
+        	<activity android:name=".controller.RegisterActivity"/>
+        	<activity android:name=".controller.AccountSettingsActivity"/>
+       		<activity android:name=".controller.ResetPasswordActivity"/>
+       		<activity android:name=".controller.ChangePasswordActivity"/>
+       		<activity android:name=".controller.EditAccountDetailsActivity"/>
+       
+        <!-- Box Setting and management activities -->
+        <activity android:name=".controller.BoxSettingsActivity"/>
+        	<activity android:name=".controller.FollowBoxActivity"/>
+        	<activity android:name=".controller.StopFollowingBoxActivity"/>
+        	<activity android:name=".controller.CreateBoxActivity"/>
+        	<activity android:name=".controller.ManageSelectBoxActivity"/>
+        	<activity android:name=".controller.ManageBoxActivity"/>
+        	<activity android:name=".controller.ScheduleBoxWODActivity"/>
+        	<activity android:name=".controller.EditBoxDetails"/>
+        
+    </application>
+
+</manifest>

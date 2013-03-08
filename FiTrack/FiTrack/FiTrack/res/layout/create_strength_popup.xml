@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_strength_popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark_bg"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <TextView
+        android:id="@+id/exercise_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Exercise Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/green_button"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/remove_button"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/red_button"
+            android:text="Remove" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exercise_name_field"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_below="@+id/exercise_name_field"
+        android:layout_marginTop="15dip" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal|center">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/weight_field"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reps"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/reps_field"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignLeft="@+id/tableLayout1"
+        android:layout_alignRight="@+id/tableLayout1"
+        android:layout_below="@+id/tableLayout1" android:layout_marginTop="10dip" android:layout_marginBottom="10dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/description_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

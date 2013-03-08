@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dip"
+        android:gravity="center_horizontal|center" >
+
+        <Button
+            android:id="@+id/wodButton"
+            android:layout_width="70dip"
+            android:layout_height="55dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/green_button"
+            android:text="@string/wod" />
+        
+        <Button
+            android:id="@+id/goalsButton"
+            android:layout_width="70dip"
+            android:layout_height="55dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/yellow_button"
+            android:text="@string/goals" />
+
+        <Button
+            android:id="@+id/logsButton"
+            android:layout_width="70dip"
+            android:layout_height="55dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/red_button"
+            android:text="@string/logs" />
+
+        <Button
+            android:id="@+id/timerButton"
+            android:layout_width="70dip"
+            android:layout_height="55dip"
+            android:background="@drawable/blue_button"
+            android:text="@string/timer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="100dip"
+        android:gravity="center_horizontal|center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center_vertical|center_horizontal|center" android:layout_margin="15dip">
+
+            <Button
+            	android:id="@+id/profileButton"
+                android:layout_width="32dip"
+                android:layout_height="30dip"
+                android:background="@drawable/user_gray"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center_vertical|center_horizontal|center" android:layout_margin="15dip">
+
+            <Button
+            	android:id="@+id/settingsButton"
+                android:layout_width="32dip"
+                android:layout_height="30dip"
+                android:background="@drawable/settings_gray"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+         
+        </LinearLayout>
+
+            <!-- Removing the sync button because we did not have time to implement is
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center_vertical|center_horizontal|center" android:layout_marginRight="15dip">
+
+            <Button
+            	android:id="@+id/syncButton"
+                android:layout_width="32dip"
+                android:layout_height="30dip"
+                android:background="@drawable/sync_gray" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sync"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+            -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:gravity="center_vertical|center_horizontal|center" android:layout_margin="15dip">
+
+            <Button
+            	android:id="@+id/aboutButton"
+                android:layout_width="32dip"
+                android:layout_height="30dip"
+                android:background="@drawable/about_gray" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:textAppearance="?android:attr/textAppearanceSmall" />           
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/fitrack" 
+        android:contentDescription="@string/fitrack_logo_contentDescription"
+        />
+
+</RelativeLayout>

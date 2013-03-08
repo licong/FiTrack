@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="175dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layoutHeader" >
+
+        <TextView
+            android:id="@+id/description_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:padding="2dip" >
+
+        <Button
+            android:id="@+id/timer_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/blue_button"
+            android:text="@string/start"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/timer_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/default_time"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/green_button"
+            android:text="@string/save"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/wod_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel1"
+        android:layout_below="@+id/scrollView2"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/scrollView1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/progress_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minLines="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="10dip"
+                android:textStyle="bold" 
+                android:text="@string/progress_label"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent_blue" >
+
+        <TextView
+            android:id="@+id/wodview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:text="@string/wod_name"
+            android:textColor="#FFFFFF"
+            android:textSize="36dip"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

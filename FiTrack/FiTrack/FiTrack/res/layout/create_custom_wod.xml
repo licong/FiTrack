@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0dip" >
+
+    <!-- LIST OF EXERCISES -->
+
+    <ListView
+        android:id="@+id/exerlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_submit_buttons"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/autocomplete_exercises"
+        android:drawSelectorOnTop="false" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/add_submit_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exerlist"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:text="@string/add_exercise"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/black_button"
+            android:text="@string/create"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_blue" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/create_custom_wod_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/prompt_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:text="@string/custom_wod_name_label" android:layout_margin="2dip"/>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/prompt_name"
+        android:ems="10" android:layout_margin="2dip" android:inputType="text">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/prompt_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edittext"
+        android:layout_below="@+id/edittext"
+        android:text="@string/add_wod_descriptionon_label" android:layout_margin="2dip"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/prompt_description"
+        android:layout_margin="2dip"
+        android:ems="10" android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/prompt_exercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_below="@+id/description"
+        android:text="@string/add_exercises_label" android:layout_margin="2dip"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_exercises"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/prompt_exercises"
+        android:layout_margin="2dip"
+        android:ems="10" />
+
+</RelativeLayout>

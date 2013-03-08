@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_blue" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/account_settings_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_password_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dip"
+        android:text="@string/change_password" />
+
+    <Button
+        android:id="@+id/edit_account_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_password_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dip"
+        android:text="@string/edit_account_information" />
+
+    <Button
+        android:id="@+id/forgot_password_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_account_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dip"
+        android:text="@string/forgot_username_or_password"/>
+
+</RelativeLayout>

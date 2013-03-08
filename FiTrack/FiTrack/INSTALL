@@ -1,0 +1,7 @@
+You need to modify your Android’s settings to allow the installation of applications from other sources. Under “Settings,” select “Application Settings” and then enable “Unknown Sources.” Also under “Settings,” select “SD Card” and “Phone Storage,” and finally enable “Disable Use for USB Storage”
+
+The .apk can be downloaded and installed from within the android browser at
+http://ieng6.ucsd.edu/~palopo/amadt/FiTrack.apk
+
+
+

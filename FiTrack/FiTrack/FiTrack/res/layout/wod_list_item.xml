@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left|center"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp" >
+
+    <!-- Exercise Name -->
+
+    <TextView
+        android:id="@+id/wod_listitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/wod_listitem_description"
+        android:text="@string/exercise_name_filler"
+        android:textColor="#040404"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Exercise Description -->
+
+
+    <!-- Rightend Duration -->
+
+    <TextView
+        android:id="@+id/wod_listitem_info"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/wod_listitem_name"
+        android:layout_marginRight="5dip"
+        android:gravity="center_vertical|right"
+        android:text="@string/side_info_filler"
+        android:textColor="#10bcc9"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/wod_listitem_description"
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/wod_listitem_name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/exercise_description_filler"
+        android:textColor="#343434"
+        android:textSize="10dip" />
+
+</RelativeLayout>

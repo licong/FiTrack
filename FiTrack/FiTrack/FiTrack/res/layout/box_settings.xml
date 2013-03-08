@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_blue" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/box_settings_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/follow_box_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dip"
+        android:text="@string/follow_box_button" />
+    
+    <Button
+        android:id="@+id/stop_following_box_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/follow_box_button"
+        android:layout_below="@+id/follow_box_button"
+        android:layout_marginTop="25dip"
+        android:text="@string/unfollow_box_button" />
+
+    <Button
+        android:id="@+id/create_box_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stop_following_box_button"
+        android:layout_below="@+id/stop_following_box_button"
+        android:layout_marginTop="50dip"
+        android:text="@string/create_box_button" />
+
+    <Button
+        android:id="@+id/manage_box_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/create_box_button"
+        android:layout_below="@+id/create_box_button"
+        android:layout_marginTop="25dip"
+        android:text="@string/manage_box_button" />
+
+</RelativeLayout>

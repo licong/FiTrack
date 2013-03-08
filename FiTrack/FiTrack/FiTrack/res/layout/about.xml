@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:src="@drawable/about_header" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FiTrack was Developed by:"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+				android:layout_centerHorizontal="true" />
+
+             <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:text="Android Mobile Application Development Team"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                />
+             <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Team Members:"
+                 android:textAppearance="?android:attr/textAppearanceMedium" 
+                 android:layout_marginTop="10dip" />
+            <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Phillip Lopo – Project Manager"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+            <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Josh Cohen – Senior System Analyst"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+            <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Robert Melchor – Software Architect"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+            <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Brian Lee – Software Development Lead"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+           <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Albert Ke – Algorithm Specialist"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+           <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Kevin Fox – Database Specialist"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+           <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Kameswari Nedunchezian – Quality Assurance Lead"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+           <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Yong Hyun Park – Quality Assurance Specialist"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+             <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Matthew Furumizo Fontes– User Interface Specialist"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+             <TextView
+                 android:layout_width="295dp"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:text="Justin Lu – Subject Matter Expert"
+                 android:textAppearance="?android:attr/textAppearanceSmall" 
+                 android:layout_marginTop="5dip" />
+               
+</LinearLayout>
